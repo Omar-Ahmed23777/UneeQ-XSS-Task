@@ -33,12 +33,12 @@ $html .= '<pre>Hello ' . $_GET[ 'name' ] . '</pre>';
 $html .= '<pre>Hello ' . htmlspecialchars($_GET[ 'name' ], ENT_QUOTES, 'UTF-8') . '</pre>';
 ```
 
-![Remediation Code](Screenshot 2026-11-12 114252.png)
+![Remediation Code](Screenshot%202026-11-12%20114252.png)
 
 ## 5. Verification
 The exact same payload (`<script>alert('UneeQ XSS Task by Omar');</script>`) was submitted again after applying the patch. The application safely rendered the payload as plain text rather than executing it, confirming that the vulnerability has been successfully remediated.
 
-![Verification](Screenshot 2026-11-12 114239.png)
+![Verification](Screenshot%202026-11-12%20114239.png)
 
 ---
 *Note: The complete modified source code can be found in the attached `low.php` file in this repository.*
